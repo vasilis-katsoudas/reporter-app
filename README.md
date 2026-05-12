@@ -3,7 +3,6 @@
 
 Software Development Capstone Project
 Developer: Vasileios - Panagiotis Katsoudas
-Supervisor: Ioannis Vetsikas
 Deree - The American College of Greece
 Spring Semester 2026
 
