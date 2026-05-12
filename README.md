@@ -1,50 +1,57 @@
-# Welcome to your Expo app 👋
+# Reporter
+**Community-Based Incident Reporting Platform**
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Software Development Capstone Project
+Developer: Vasileios - Panagiotis Katsoudas
+Supervisor: Ioannis Vetsikas
+Deree - The American College of Greece
+Spring Semester 2026
 
-## Get started
+A cross-platform mobile application developed for a final year Capstone project. The system allows users to collaboratively report and monitor local safety incidents through real-time geospatial data.
 
-1. Install dependencies
+## Core Features
+* **Incident Feed:** Three-mode filtering system including Nearby (proximity-based), Trending (engagement-based), and Safety Zones (geofenced).
+* **Interactive Mapping:** Map interface utilizing dynamic markers that update color based on report verification status.
+* **Safety Zones:** User-defined geographical radiuses for monitoring specific high-priority locations.
+* **Verification System:** A reputation-based voting mechanism allowing the community to validate or flag reports.
+* **Search:** Integrated search functionality for locating specific users and incident reports.
 
-   ```bash
+## Technical Stack
+* **Framework:** React Native/Expo
+* **Routing:** Expo Router
+* **State Management:** React Context API (AuthContext and ReportsContext)
+* **Location Services:** expo-location
+* **Mathematics:** Haversine formula for proximity and geofencing calculations.
+
+## Installation Instructions
+
+1. **Extract Source Code**
+   Unzip the submitted project folder and navigate to the root directory using a terminal.
+
+2. **Install Dependencies**
    npm install
-   ```
 
-2. Start the app
-
-   ```bash
+3. **Execution**
    npx expo start
-   ```
+   *Use the Expo Go application on a mobile device to scan the generated QR code.*
 
-In the output, you'll find options to open the app in a
+## Deployment Commands
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Android APK Generation
+eas build -p android --profile preview
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### iOS Simulator Build
+eas build -p ios --profile simulator
 
-## Get a fresh project
+## Testing Credentials
+The following account is provided for evaluation and grading:
 
-When you're ready, run:
+* **Email:** grading@email.com
+* **Password:** grading
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Project Structure
+* **/app:** Contains the primary application logic and file-based routing.
+* **/components:** Reusable UI elements (SideMenu).
+* **/context:** Global state management for authentication and incident data.
+* **/constants:** Category and type configurations.
+* **/hooks:** Custom React hooks for relative time and location logic.
