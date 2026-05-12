@@ -1,9 +1,9 @@
 # Reporter
 **Community-Based Incident Reporting Platform**
 
-Software Development Capstone Project
-Developer: Vasileios - Panagiotis Katsoudas
-Deree - The American College of Greece
+Software Development Capstone Project,
+Developer: Vasileios - Panagiotis Katsoudas,
+Deree - The American College of Greece,
 Spring Semester 2026
 
 A cross-platform mobile application developed for a final year Capstone project. The system allows users to collaboratively report and monitor local safety incidents through real-time geospatial data.
